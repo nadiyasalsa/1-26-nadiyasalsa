@@ -18,11 +18,14 @@ use Illuminate\Support\Facades\Route;
 // });
 
 Route::get('/', function () {
-    return view ('Home');
+    return view('home', [
+        "title" => "Home"
+    ]);
 });
 
 Route::get('/about', function () {
     return view ('About', [
+        "title" => "About",
         "nama" => "Nadiya Salsabila Nur Adhani",
         "email" => "nadiyasalsa21@gmail.com",
         "gambar" => "nadiyasalsa.jpeg"
@@ -30,5 +33,7 @@ Route::get('/about', function () {
 });
 
 Route::get('/gallery', function () {
-    return view ('Gallery');
+    return view ('Gallery', [
+        "title" => "Gallery"
+    ]);
 });
