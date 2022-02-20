@@ -23,7 +23,7 @@ Route::get('/', function () {
 Route::get('/about', function () {
     return view ('About', [
         "title" => "About",
-        "nama" => "Nadiya Salsabila Nur Adhani",
+        "nama" => "nadiyasalsa",
         "email" => "nadiyasalsa21@gmail.com",
         "gambar" => "nadiyasalsa.jpeg"
     ]);
