@@ -15,15 +15,15 @@ use App\Http\Controllers\ContactController;
 */
 
 Route::get('/', function () {
-    return view('home', [
-        "title" => "Home"
+    return view('index', [
+        "title" => "Beranda"
     ]);
 });
 
 Route::get('/about', function () {
     return view ('About', [
         "title" => "About",
-        "nama" => "nadiyasalsa",
+        "nama" => "Nadiya Salsabila Nur Adhani",
         "email" => "nadiyasalsa21@gmail.com",
         "gambar" => "nadiyasalsa.jpeg"
     ]);
@@ -35,3 +35,11 @@ Route::get('/gallery', function () {
     ]);
 });
 Route::resource('/contacts', ContactController::class);
+
+Auth::routes();
+
+Route::group(['middleware' => ['auth']], function() {
+    Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
+
+});
+Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
