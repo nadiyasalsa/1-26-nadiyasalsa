@@ -6,27 +6,29 @@
     </button>
     <div class="collapse navbar-collapse" id="navbarNav">
       <ul class="navbar-nav">
-        <li class="nav-item">
-          <a class="nav-link {{ ( $title === 'Home') ? 'active' : '' }}" aria-current="page" href="/">Home</a>
+      <li class="nav-item">
+          <a class="nav-link {{ ( $title === 'Home' ) ? 'active' : '' }}" aria-current="page" href="/">Home</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link {{ ( $title === 'About') ? 'active' : '' }}" href="/about">About</a>
+          <a class="nav-link {{ ( $title === 'About' ) ? 'active' : '' }}" href="/about">About</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link {{ ( $title === 'Gallery') ? 'active' : '' }}" href="/gallery">Gallery</a>
+          <a class="nav-link {{ ( $title === 'Gallery' ) ? 'active' : '' }}" href="/gallery">Gallery</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link {{ ( $title === 'Contacts' ) ? 'active' : '' }}" href="/contacts">Contacts Us</a>        
+          <a class="nav-link {{ ( $title === 'Contacts' ) ? 'active' : '' }}" href="{{ route('contacts.create')}}">Contacts Us</a>
         </li>
     </ul>
+
     <ul class="navbar-nav ms-auto">
         <li class="nav-item">
-            <a class="nav-link" href="{{route ('login')}}">Login</a>
+          <a class="nav-link" href="{{route ('login')}}">Login</a>
         </li>
         <li class="nav-item">
-            <a class="nav-link" href="{{route ('register')}}">Register</a>
+          <a class="nav-link" href="{{route ('register')}}">Register</a>
         </li>
       </ul>
+      
     </div>
   </div>
 </nav>

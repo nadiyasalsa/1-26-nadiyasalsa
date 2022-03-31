@@ -24,7 +24,7 @@
                     <div class="login-content">
                         <div class="login-logo">
                             <a href="#">
-                                <img src="{{asset('admin/images/icon/logo.png')}}" alt="CoolAdmin">
+                                <img src="{{ asset('admin/images/icon/logo.png')}}" alt="CoolAdmin">
                             </a>
                         </div>
                         <div class="login-form">
@@ -32,7 +32,7 @@
                                 @csrf 
                                 <div class="form-group">
                                     <label>Nama</label>
-                                    <input class="au-input au-input--full" type="text" name="Username" placeholder="Nama">
+                                    <input class="au-input au-input--full" type="text" name="name" placeholder="Nama">
                                 </div>
                                 <div class="form-group">
                                     <label>Email Address</label>

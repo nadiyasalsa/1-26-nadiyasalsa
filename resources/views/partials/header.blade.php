@@ -5,7 +5,8 @@
                             <form class="form-header" action="" method="POST">
                                 
                             </form>
-                            <div class="header-button">                 
+                            <div class="header-button">      
+
                                 <div class="account-wrap">
                                     <div class="account-item clearfix js-item-menu">
                                         <div class="image">
@@ -18,7 +19,7 @@
                                             <div class="info clearfix">
                                                 <div class="image">
                                                     <a href="#">
-                                                        <img src="{{asset('admin/images//icon/avatar-01.jpg')}}" alt="{{ Auth::user()->name }}" />
+                                                    <img src="{{asset('admin/images//icon/avatar-01.jpg')}}" alt="{{ Auth::user()->name }}" />
                                                     </a>
                                                 </div>
                                                 <div class="content">
